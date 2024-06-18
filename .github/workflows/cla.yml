@@ -1,3 +1,4 @@
+# Docs: https://github.com/contributor-assistant/github-action?tab=readme-ov-file#configure-contributor-license-agreement-within-two-minutes
 name: "CLA Assistant"
 on:
   issue_comment:
