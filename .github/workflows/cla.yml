@@ -27,7 +27,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           path-to-signatures: 'signatures/version1/cla.json'
-          path-to-document: 'https://github.com/nvzkupu/cla-test/blob/main/tools/cla/NVIDIA_CLA_v1.0.1.md' # e.g. a CLA or a DCO document
+          path-to-document: 'https://github.com/nvzkupu/cla-test/blob/main/.github/workflows/cla/NVIDIA_CLA_v1.0.1.md' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
           allowlist: svc-remix-github,bot*
