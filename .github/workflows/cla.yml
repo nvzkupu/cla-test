@@ -30,7 +30,7 @@ jobs:
           path-to-document: 'https://github.com/nvzkupu/cla-test/blob/main/.github/workflows/cla/NVIDIA_CLA_v1.0.1.md' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
-          allowlist: svc-remix-github,bot*
+          allowlist: user1,nvzkupu,svc-remix-github,bot*
 
          # the followings are the optional inputs - If the optional inputs are not given, then default values will be taken
           #remote-organization-name: enter the remote organization name where the signatures should be stored (Default is storing the signatures in the same repository)
