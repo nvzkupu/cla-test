@@ -32,11 +32,11 @@ jobs:
           path-to-document: 'https://github.com/nvzkupu/cla-test/blob/main/.github/workflows/cla/NVIDIA_CLA_v1.0.1.md' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
-          allowlist: user1,nvzkupu,svc-remix-github,bot*
+          allowlist: nvzkupu,svc-remix-github,bot*
 
          # the followings are the optional inputs - If the optional inputs are not given, then default values will be taken
-          remote-organization-name: 'nvzkupu'
-          remote-repository-name: 'test-private'
+          remote-organization-name: ${{ vars.PRIVATE_ORG_NAME }}
+          remote-repository-name: ${{ vars.PRIVATE_PROJECT_NAME }}
           #create-file-commit-message: 'For example: Creating file for storing CLA Signatures'
           #signed-commit-message: 'For example: $contributorName has signed the CLA in $owner/$repo#$pullRequestNo'
           #custom-notsigned-prcomment: 'pull request comment with Introductory message to ask new contributors to sign'
